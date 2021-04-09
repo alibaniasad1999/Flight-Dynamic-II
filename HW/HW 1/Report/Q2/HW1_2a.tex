@@ -1,0 +1,32 @@
+Body to tunnel transformation matrix:
+\\
+Angle of attack:
+$$\theta = 20^{\circ}$$
+Yaw angle:
+$$\psi = 10^{\circ}$$
+Bank angle:
+$$\phi = 10^{\circ}$$
+
+$$R_{body}^{tunnel} = \begin{bmatrix}
+	\cos(-\psi) & -\sin(-\psi) & 0 \\
+	\sin(-\psi) & \cos(-\psi)  & 0 \\
+	0          &     0       & 1
+\end{bmatrix} \times
+\begin{bmatrix}
+	\cos(-\theta) & 0 & \sin(-\theta)   \\
+		0      & 1  &       0 \\
+	-\sin(-\theta) & 0 & \cos(-\theta)  
+
+\end{bmatrix} \times
+\begin{bmatrix}
+		1      & 0 &         0     \\
+	0 & \cos(-\phi) &  -\sin(-\phi)   \\
+
+	0 &  \sin(-\phi) & \cos(-\phi)  
+	
+\end{bmatrix}  $$
+
+$$R_{body}^{tunnel} = \begin{bmatrix}
+	    0.9254  &  0.2295  & -0.3016 \\
+		-0.1632  &  0.9595  &  0.2295 \\
+		0.3420  & -0.1632  &  0.9254 \end{bmatrix}$$

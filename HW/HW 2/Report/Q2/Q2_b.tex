@@ -3,18 +3,37 @@ C_m = C_{m_0} + C_{m_\alpha}\alpha + C_{m_{i_H}} i_H
 \label{eq_cmWithH}
 \end{equation}
 Now define every parameter in equation \ref{eq_cmWithH}.
-$$C_{m_0} = C_{m_{ac_{wb}}} + C_{L_{0_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})$$
-$$C_{m_\alpha} = C_{L_{\alpha_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})-
+\begin{equation}
+C_{m_0} = C_{m_{ac_{wb}}} + C_{L_{0_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})
+\label{eq_cmzero}
+\end{equation}
+\begin{equation}
+C_{m_\alpha} = C_{L_{\alpha_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})-
 C_{L_{\alpha_{H}}}\eta_H
 \dfrac{S_H}{S}
 (1-\dfrac{\partial \varepsilon}{\partial \alpha})
 (\bar x_{ac_{H}}-\bar x_{cg})
-$$
-$$C_{m_{i_H}} = C_{L_{\alpha_{H}}}\eta_H
+\label{eq_cmalpha}
+\end{equation}
+\begin{equation}C_{m_{i_H}} = -C_{L_{\alpha_{H}}}\eta_H
 \dfrac{S_H}{S}
-(\bar x_{ac_{H}}-\bar x_{cg})$$
+(\bar x_{ac_{H}}-\bar x_{cg})\end{equation}
 Data:
-$$\alpha = 7.88^{\circ},\quad C_{m_{ac_{wb}}} = -0.032,\quad C_{L_{\alpha_{wb}}}= 0.08
+$$\alpha = 7.88^{\circ},\quad i_H = 2.7^{\circ}
+,\quad C_{m_{ac_{wb}}} = -0.032,\quad C_{L_{\alpha_{wb}}}= 0.08_{1/\deg}
+,\quad C_{L_{0_{wb}}}= 0.12
 ,\quad \bar x_{cg} = 0.35
 ,\quad \bar x_{ac} = 0.24
 $$
+$$
+C_{L_{\alpha_{H}}} = 0.1_{1/\deg}, \quad S_H = 0.02_{m^2}, \quad S = 0.1_{m^2}, \quad \varepsilon_0 = 0
+, \quad
+\dfrac{\partial \varepsilon}{\partial \alpha} = 0.35,\quad
+\bar x_{ac_{H}}-\bar x_{cg} = 1.7
+$$
+We assume that $\eta_H = 1$.
+$$C_{m_0} = -0.032 + 0.12(0.35-0.24) = -0.0188$$
+$$C_{m_\alpha} = 0.08(0.35-0.24)-0.1\frac{0.02}{0.1}(1-0.35)(1.7) = -0.0133 $$
+$$C_{m_{i_H}} = -0.1\frac{0.02}{0.1}(1.7)=-0.0340$$
+$$C_m = -0.0188 - 0.0133\times7.88 - 0.0340 \times 2.7 = -0.2154$$
+$$C_{m_{cg}} = -0.2154$$

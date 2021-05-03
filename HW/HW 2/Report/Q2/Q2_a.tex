@@ -1,8 +1,34 @@
-Data:
-$$\bar x_{ac} - \bar x_{cg} = 0.05, \quad C_{m_{ac_{wb}}} = -0.016, \quad C_{L_{wb}} = 0.45$$
+We assume that $C_L$ have linear beheaver between $-1.5^{\circ}$ and $8^{\circ}$.
+
+
+At $(-1.5)$ degree $C_L$ is $0$ and at $5$ degree $C_L$ is 0.52.
+$$\dfrac{\Delta C_L}{\Delta \alpha} = C_{L_{\alpha}}\to C_{L_{\alpha}} = \dfrac{0.52 - 0.0}{5 - (-1.5)} = 0.08$$
 \begin{equation}
-C_m = C_{m_{ac_{wb}}}  + C_{L_{wb}} (\bar x_{ac} - \bar x_{cg} )
-\label{eq_cm0}
+C_L = C_{L_0}+C_{L_\alpha}\alpha = 0.12 + 0.08\alpha
+\label{eq_clalpha}
 \end{equation}
-From equation \ref{eq_cm0} we have:
-$$C_m = -0.016 + 0.45(0.05) = 0.0065 \to C_m = 0.0065$$
+From equation \ref{eq_clalpha} at $1$ degree angle of attack $C_L = 0.2$ and at $7.88$ degree angle of attack $C_L = 0.75$.
+\begin{equation}
+C_m = C_{m_0} + C_{m_\alpha}\alpha
+\label{eq_cm}
+\end{equation}
+
+
+\begin{equation}
+C_{m_{wb}} = (C_{m_{ac_{wb}}} + C_{L_{0_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})) +
+C_{L_{\alpha_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}})
+\label{eq_cm}
+\end{equation}
+
+
+From equation \ref{eq_cm}:
+\begin{enumerate}
+    \item at $1$ degree angle of attack:
+    $$-0.01 = C_{m_{ac_{wb}}}  + 0.2 (0.35-\bar x_{ac_{wb}}) $$
+    \item at $7.88$ degree angle of attack:
+    $$0.05 =C_{m_{ac_{wb}}} +  0.75(0.35-\bar x_{ac_{wb}}) $$
+\end{enumerate}
+There is 2 equation and 2 unknowns.
+$$x_{ac_{wb}} = 0.24,\quad C_{m_{ac_{wb}}} = -0.032$$
+
+

@@ -1,0 +1,45 @@
+
+
+\documentclass{article}
+% Template-specific packages
+
+\usepackage{graphicx} % Required for including images
+
+
+\usepackage{fullpage,enumitem,amsmath,amssymb,graphicx}
+\usepackage{pdfpages}
+\usepackage{amsmath, amsthm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\rightmark}
+\fancyhead[L]{Ali BaniAsad 96108378}
+\setlength{\headheight}{10pt}
+\setlength{\headsep}{0.2in}
+\usepackage{titling}
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+\usepackage{graphicx}
+\title{Bonus \#7}
+\author{Ali BaniAsad 96108378}
+
+\begin{document}
+\maketitle
+Delta elevator equation:
+$$\delta_{E_1} = \dfrac{-C_{L_{\alpha}}(C_{m_0} + C_{m_{i_H}} i_H) - C_{m_{\alpha}}(C_L - C_{L_0} -
+C_{L_{i_H}}i_H)
+ }{C_{L_\alpha} C_{m_{\delta_E}} - C_{m_\alpha}C_{l_{\delta_E}}}
+$$
+For above equation we can assume every parameter is constant except $\bar x_{cg}$, there is on equation and one unknowns.
+I use this assumptions to simplify equations and solved with MATLAB and code has attached.
+$$C_{m_\alpha} = C_{L_{\alpha_{wb}}}(\bar x_{cg} - \bar x_{ac_{wb}}) - H( \bar x_{ac_{H}}-\bar x_{cg} )  $$
+$$C_{m_{i_h}} = -IH( \bar x_{ac_{H}}-\bar x_{cg} )  $$
+$$C_{m_{\delta_E}} = -DeltaE( \bar x_{ac_{H}}-\bar x_{cg} )  $$
+Above equation solved symbolic with MATLAB and for positive and negative $\delta_E$ we must have two $x_{cg}$.
+With this method we can find out  locations of $c_{cg}$ that we can control aircraft.
+\end{document}
